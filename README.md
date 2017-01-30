@@ -34,7 +34,7 @@ $('.js_columns').makeColumns(300, "space-around", {
 - `hr.hrBorder.borderStyle` - 'border-style' property of separator
 - `hr.hrBorder.borderColor` - 'border-color' property of separator
 
-## Exampel of full properties use:
+## Example of full properties use:
 ```
 $('.js_columns').makeColumns(300, "space-around", {
         hrAvail: true,
