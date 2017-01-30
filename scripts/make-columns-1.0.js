@@ -42,7 +42,7 @@
             var maxWidth = Math.max.apply(null, allColumns);
             maxWidthsArray.push(maxWidth);
             childHeight = 0;
-            if(allColumns.length>0 && hr.hrAvail){
+            if(allColumns.length>0 && hr){
                 addHr(e, newCounter);
                 addHrStyle();
                 newCounter++;
@@ -194,7 +194,7 @@
             $.each(maxWidthsArray, function (i, v) {
                 elementWidth += v;
             });
-            if (hr.hrAvail) {
+            if (hr) {
                 $.each($('.hr'), function () {
                     elementWidth += $(this).outerWidth(true);
                 })
