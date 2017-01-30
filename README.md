@@ -1,10 +1,14 @@
 # columns-1.0
 All you need is to use .makeColumns() method on flex element. After that all child elemens will create columns inside parent element.
 
-## main arguments:
-- elementHeight - height of flex element, 
-- justify - css 'justify-content' property,
-- hr - object, adding separator between columns.
+## Require:
+- JQuery
+- at least `elementHeigt` argument (without height it will be only one flex column)
+
+## Main arguments:
+- `elementHeight` - height of flex element, 
+- `justify` - css 'justify-content' property,
+- `hr.hrAvail` - object, adding separator between columns.
 ```
 .makeColumns(elementHeight, justify, hr)
 ```
@@ -17,20 +21,20 @@ $('.js_columns').makeColumns(300, "space-around", {
 ```
 
 ## hr properties:
-- hrAvail - adding separator
-- hrHeight - separator height
-- hrWidth - separator width
-- hrRadius - separator property 'border-radius'
-- hrColor - separator color
-- hrMargin - horisontal margin between separator and nearby columns
-- hrBorder - object, use to create dashed or dotted separator.
+- `hr.hrAvail` - adding separator
+- `hr.hrHeight` - separator height
+- `hr.hrWidth` - separator width
+- `hr.hrRadius` - separator property 'border-radius'
+- `hr.hrColor` - separator color
+- `hr.hrMargin` - horisontal margin between separator and nearby columns
+- `hr.hrBorder` - object, use to create dashed or dotted separator.
 
 ## hrBorder properties:
-- hrBorderSize - size of border-separator
-- hrBorderStyle - 'border-style' property of separator
-- hrBorderColor - 'border-color' property of separator
+- `hr.hrBorder.borderSize` - size of border-separator
+- `hr.hrBorder.borderStyle` - 'border-style' property of separator
+- `hr.hrBorder.borderColor` - 'border-color' property of separator
 
-## Exampe of full properties use:
+## Exampel of full properties use:
 ```
 $('.js_columns').makeColumns(300, "space-around", {
         hrAvail: true,
@@ -49,4 +53,3 @@ $('.js_columns').makeColumns(300, "space-around", {
 
 # features:
 - hrBorderColor has a higher priority than hrColor.
-- needs JQuery
